@@ -1,7 +1,7 @@
 # AtCoder-new-
 pycharmで解いたAtCoderの問題置き場  
 2018 3/16より使用  
-#### 以前のAtCoderはIpython用なので注意！
+#### 以前のAtCoderはIpython用
 
 ## 参加記録
 - 0406 ABC123 2完
