@@ -1,19 +1,15 @@
 S = input()
-add = 0
 T = int(input())
 w = S.count('L')
 w -= S.count('R')
 h = S.count('U')
 h -= S.count('D')
 q = S.count('?')
+mix = abs(w) + abs(h)
 if T == 1:
-    if w + h >= 0:
-        add = q
-    else:
-        add = -q
+    print(mix + q)
 else:
-    if w + h >= 0:
-        add = -q
+    if q > mix:
+        print((q-mix) % 2)
     else:
-        add = q
-print(abs(w) + abs(h) + add)
+        print(mix - q)
