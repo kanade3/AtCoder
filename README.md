@@ -1,6 +1,6 @@
 # AtCoder-new-
 pycharmで解いたAtCoderの問題置き場  
-2018 3/16より使用  
+201 3/16より使用  
 #### 以前のAtCoderはIpython用
 
 ## 参加記録
