@@ -1,10 +1,11 @@
 # AtCoder-new-
 pycharmで解いたAtCoderの問題置き場  
-2018 3/16より使用  
-#### 以前のAtCoderはIpython用なので注意！
+2019 3/16より使用  
+#### 以前のAtCoderはIpython用
 
 ## 参加記録
-
+- 0406 ABC123 2完
+- 0330 エクサウィザーズ 2完
 - 0316 AGC032 0完
 - 0309 ABC121 3完
 - 0303 ABC120 3完
