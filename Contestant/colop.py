@@ -3,7 +3,7 @@ a, b, c = map(int, input().split())
 
 
 def rec(x, y, z):
-    # mapの中を調べるのは時間がかかるので、先にX<=yかどうかを検査する。
+    # mapの中を調べるのは時間がかかるので、先にx<=yかどうかを検査する。
     if x <= y:
         memo[(x, y, z)] = y
         return y
