@@ -4,6 +4,7 @@
 # sys.stdin.readlineを使うことで高速にすることができる（これ使わないとTLEになる）
 
 import sys
+
 input = sys.stdin.readline
 sys.setrecursionlimit(1000000)
 n, q = map(int, input().split())
