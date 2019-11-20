@@ -1,37 +1,24 @@
-from operator import mul
-from functools import reduce
-
-
-def cmb(n_cmb, r_cmb):
-    if n_cmb == 0: return 0
-    r_cmb = min(n_cmb - r_cmb, r_cmb)
-    if r_cmb == 0: return 1
-    over = reduce(mul, range(n_cmb, n_cmb - r_cmb, -1))
-    under = reduce(mul, range(1, r_cmb + 1))
-    return over // under
-
-
 n = int(input())
-s = [input() for _ in range(n)]
-wflag = [0] * 5
+m, a, r, c, h = 0, 0, 0, 0, 0
+for i in range(n):
+    name = input()
+    if name[0] == 'M':
+        m += 1
+    elif name[0] == 'A':
+        a += 1
+    elif name[0] == 'R':
+        r += 1
+    elif name[0] == 'C':
+        c += 1
+    elif name[0] == 'H':
+        h += 1
 
-for i in s:
-    if i[0] == 'M':
-        wflag[0] += 1
-    elif i[0] == 'A':
-        wflag[1] += 1
-    elif i[0] == 'R':
-        wflag[2] += 1
-    elif i[0] == 'C':
-        wflag[3] += 1
-    elif i[0] == 'H':
-        wflag[4] += 1
-print(wflag)
+s = [m, a, r, c, h]
+x = [0, 0, 0, 0, 0, 0, 1, 1, 1, 2]
+y = [1, 1, 1, 2, 2, 3, 2, 2, 3, 3]
+z = [2, 3, 4, 3, 4, 4, 3, 4, 4, 4]
 
-in_n = 0
-w = 1
-for i in wflag:
-    if i != 0:
-        in_n += 1
-        w *= i
-print(cmb(in_n, 3) * w)
+cnt = 0
+for i in range(10):
+    cnt += (s[x[i]] * s[y[i]] * s[z[i]])
+print(cnt)
