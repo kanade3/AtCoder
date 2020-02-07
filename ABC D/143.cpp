@@ -14,9 +14,10 @@ int main(){
     rep(b,n) rep(a,b) {
         int ab =L[a]+L[b];
         // iteretorが帰ってくるので、添字変換するためにL.begin()を引いている
+        // lower_boundはabが入るindexの一番左を返す。pythonのbisect.bisect_leftと同じ。
         int r = lower_bound(L.begin(),L.end(),ab) - L.begin();
         int l= b+1;
-
+        
         ans+=max(0,r-l);
     }
     cout << ans << endl;
