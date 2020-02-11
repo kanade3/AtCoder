@@ -8,7 +8,7 @@ BC = [list(map(int, input().split())) for _ in range(M)]
 BC.sort(key=lambda x: (x[1], x[0]), reverse=True)
 print(BC)
 for b, c in BC:
-    print(b,c)
+    print(b, c)
     if A[0] >= c:
         break
     for i in range(b):
@@ -17,7 +17,7 @@ for b, c in BC:
         print(A)
         # heappop: popを行い、heapから最小の要素を返す
         heapq.heappop(A)
-        print(A,c)
+        print(A, c)
         heapq.heappush(A, c)
 
 print(sum(A))
