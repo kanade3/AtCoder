@@ -6,7 +6,7 @@ cnt = 0
 while index < n:
     if p[index] == index + 1:
         cnt += 1
-        index += 2
+        index
     else:
         index += 1
 print(cnt)
