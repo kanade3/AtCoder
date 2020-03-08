@@ -1,7 +1,0 @@
-n = int(input())
-h = int(n / 3600)
-m = int((n - h * 3600) / 60)
-s = int((n - h * 3600 - m * 60))
-print('%02d' % h, end=':')
-print('%02d' % m, end=':')
-print('%02d' % s)
