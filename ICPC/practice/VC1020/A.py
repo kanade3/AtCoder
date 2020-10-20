@@ -1,3 +1,4 @@
+# https://onlinejudge.u-aizu.ac.jp/beta/room.html#ojaws20201020/info
 while (1):
     n = int(input())
     if n == 0:
